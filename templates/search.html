@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Tracking</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/icon.png">
+</head>
+<body>
+    <div class="top-left-logo">
+        <img src="../static/App.png" alt="Logo">
+        <h5> <strong>SAR</strong> Link </h5>
+    </div>
+    <h1>📬 Mail Tracking Lookup System</h1>
+    <h2>Search Tracking Number</h2>
+    <div class="con">
+    <p class="up_file"><strong class="strong">Uploaded File:</strong> {{ uploaded_file_name }}</p>
+    <form class="tracking_number" action="/search" method="post">
+        <label class="search" for="tracking_no"> <strong>Enter Tracking No:</strong></label>
+        <input type="text" name="tracking_no" id="tracking_no" required>
+        <br><br>
+        <button class="search_btn" type="submit">Search</button>
+    </form>
+    </div>
+    <hr>
+    <!-- Include the result.html file -->
+    {% include 'result.html' %}
+</body>
+</html>

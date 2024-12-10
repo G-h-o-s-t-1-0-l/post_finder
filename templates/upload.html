@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload File</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/icon.png">
+</head>
+<body>
+    <div class="top-left-logo">
+        <img src="../static/App.png" alt="Logo">
+        <h5> <strong>SAR</strong> Link </h5>
+    </div>
+    <h1>📬 Mail Tracking Lookup System</h1>
+    <h2>Upload Excel File</h2>
+    <div class="upload">
+    <form class="container" action="/" method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="file" id="file" required>
+        <br><br>
+        <button class="upload" type="submit">Upload</button>
+    </form>
+    </div>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

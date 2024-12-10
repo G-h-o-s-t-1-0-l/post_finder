@@ -1,0 +1,158 @@
+/* styles.scss */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.top-left-logo {
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: fit-content;
+}
+.top-left-logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #ffa31a;
+}
+.top-left-logo h5 {
+  color: #ffa31a;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+h1 {
+  color: #ffa31a;
+  margin-left: 6%;
+}
+
+h2 {
+  color: #ffa31a;
+  text-align: center;
+}
+
+.upload {
+  color: black;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  background-color: #808080;
+  border-radius: 15px;
+  color: #000000;
+  padding: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+input[type=file]::file-selector-button {
+  width: fit-content;
+  margin-right: 20px;
+  border: none;
+  background: #ffa31a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #808080;
+}
+
+button {
+  padding: 10px 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #000000;
+  background-color: #ffa31a;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 10%;
+  width: 100px;
+  font-size: medium;
+}
+button:hover {
+  background-color: #808080;
+}
+
+#tracking_no {
+  width: 50%;
+  margin: 10px;
+  font-size: large;
+}
+
+.con {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.tracking_number .up_file {
+  width: 50%; /* change this to desired width */
+  height: auto;
+}
+
+.tracking_number {
+  width: 550px;
+}
+
+.up_file, .search {
+  font-size: 20px;
+}
+
+.strong, .search {
+  color: #ffa31a;
+}
+
+.search_btn {
+  padding: 10px;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+.all strong {
+  color: #ffa31a;
+  font-size: 25px;
+}
+.all .result-container {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #555353;
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.all .result-container h3 {
+  color: #ffa31a;
+}
+.all .result-container p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all .result-container p.error {
+  color: red;
+}
+.all .result-container p.success {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

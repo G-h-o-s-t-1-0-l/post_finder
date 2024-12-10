@@ -1,0 +1,192 @@
+/* styles.scss */
+
+// Variables
+$primary-color:radial-gradient(circle, rgba(250,212,163,1) 0%, rgba(253,187,92,1) 50%, rgba(255,163,26,1) 100%); 
+$secondary-color:#808080;
+$text-color:#ffa31a;
+$bg-color:#1b1b1b ;
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  background-color:$bg-color; 
+  color: white;  
+}
+
+// Style for the top-left logo
+.top-left-logo {
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: fit-content;
+
+  img {
+    width: 80px;  // Adjust the size as needed
+    height: auto; // Maintain aspect ratio
+    border-radius: 50%; // Optional: Make it circular
+    border: 2px solid $text-color; // Optional: Add a border
+  }
+
+  h5{
+    color:$text-color;
+  margin-top: 0;
+  margin-left: 10px;
+  }
+}
+
+
+
+h1{
+  color: $text-color;
+  margin-left:6%;
+}
+
+// Header styles
+h2 {
+  color: $text-color;
+  text-align: center;
+}
+
+//maga CONTAINER
+.upload{
+color:black;
+}
+
+//form
+.container{
+display:flex;
+  gap: 10px;
+}
+
+//input (file upload)
+input{
+  background-color: $secondary-color;
+  border-radius: 15px; 
+  color: #000000;
+  padding: 10px;
+  width: 80%;
+  margin-left:10%;
+}
+
+
+// Browse file butt
+input[type="file"]::file-selector-button {
+  width: fit-content;
+  margin-right: 20px;
+  border: none;
+  background: $text-color;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background:$secondary-color;
+}
+
+// Button styles
+button {
+  padding:10px 15px;  
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #000000;
+  background-color: $text-color;
+  border: none;
+  border-radius:15px;
+  cursor: pointer;
+  margin-right:10%;
+  width: 100px;
+  font-size: medium;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+
+
+
+// search container styles
+#tracking_no{
+  width:50%;
+  margin: 10px;
+  font-size: large;
+}
+
+.con{
+  display: grid;
+  place-items: center;
+  width:100%;
+  height:fit-content;
+}
+.tracking_number .up_file{
+  width: 50%; /* change this to desired width */
+  height: auto;
+  }
+
+.tracking_number{
+  width:550px;
+}
+
+.up_file, .search{
+  font-size: 20px;
+}
+
+  .strong, .search{
+  color: $text-color;
+  }
+
+  .search_btn{
+    padding:10px;
+  }
+
+// Result container styles
+.all {   
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+font-weight: 600;
+font-size:25px;
+strong{
+  color: $text-color;
+  font-size: 25px;
+}
+
+.result-container {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color:#555353;
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  h3{
+    color: $text-color;
+  }
+
+  p {
+    margin: 5px 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    p,strong{
+      
+    }
+
+    &.error {
+      color: red;
+    }
+
+    &.success {
+      color: green;
+    }
+  }
+}
+}
+
+
